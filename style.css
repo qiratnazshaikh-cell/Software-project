@@ -637,40 +637,83 @@ main {
     width: 25px;
 }
 
+/* ========== TEAM SECTION - CENTERED SIDE BY SIDE ========== */
 .team-members {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 20px 0;
 }
 
 .member {
     background: #f8f9fa;
-    padding: 15px;
-    border-radius: 12px;
+    padding: 25px 30px;
+    border-radius: 15px;
     text-align: center;
+    min-width: 200px;
+    flex: 1;
+    max-width: 260px;
+    transition: all 0.3s ease;
+}
+
+.member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .member i {
-    font-size: 30px;
+    font-size: 45px;
     color: #667eea;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .member strong {
     display: block;
     color: #333;
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+}
+
+.member p {
+    color: #666;
+    margin: 5px 0;
+    font-size: 13px;
 }
 
 .role-badge {
     display: inline-block;
-    background: #667eea;
+    background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
-    padding: 4px 12px;
-    border-radius: 20px;
+    padding: 6px 15px;
+    border-radius: 25px;
     font-size: 12px;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
+.role-badge i {
+    font-size: 12px;
+    margin-right: 5px;
+    color: white;
+}
+
+/* Documentation note */
+.doc-note {
+    text-align: center;
+    margin-top: 20px;
+    padding: 12px;
+    background: #f0f7ff;
+    border-radius: 10px;
+    color: #667eea;
+    font-size: 14px;
+}
+
+.doc-note i {
+    margin-right: 8px;
+}
+
+/* ========== INFO LIST ========== */
 .info-list {
     list-style: none;
 }
@@ -708,4 +751,15 @@ footer {
     .welcome-section h2 { font-size: 1.5rem; }
     .filters { flex-wrap: wrap; }
     .filter-btn { padding: 8px 16px; font-size: 12px; }
+    
+    /* Team section responsive - stacks on mobile */
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .member {
+        width: 100%;
+        max-width: 280px;
+    }
 }
