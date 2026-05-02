@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTasks - Smart Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="animate-slide-down">
+        <h1><i class="fas fa-tasks"></i> DevTasks</h1>
+        <p>Smart Task Manager for Developers</p>
+    </header>
+
+    <nav class="animate-slide-down">
+        <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+        <a href="tasks.html"><i class="fas fa-check-circle"></i> My Tasks</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+    </nav>
+
+    <main>
+        <div class="welcome-section animate-fade-in">
+            <div class="welcome-icon">
+                <i class="fas fa-rocket"></i>
+            </div>
+            <h2>Welcome to DevTasks</h2>
+            <p>Organize your coding tasks, track progress, and boost your productivity.</p>
+            <a href="tasks.html" class="btn pulse"><i class="fas fa-play"></i> Start Managing Tasks →</a>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-card animate-card" style="animation-delay: 0.1s">
+                <div class="card-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Task Statistics</h3>
+                <div class="stats-display">
+                    <div class="stat-number" id="totalTasks">
+                        <span class="counter">0</span>
+                    </div>
+                    <div class="stat-label">Total Tasks</div>
+                    <div class="stat-number" id="completedTasks" style="margin-top: 15px;">
+                        <span class="counter">0</span>
+                    </div>
+                    <div class="stat-label">Completed Tasks</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <div class="info-card animate-card" style="animation-delay: 0.2s">
+                <div class="card-icon">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <h3>Key Features</h3>
+                <ul>
+                    <li><i class="fas fa-plus-circle"></i> Add & Delete tasks</li>
+                    <li><i class="fas fa-check-double"></i> Mark as complete</li>
+                    <li><i class="fas fa-filter"></i> Smart filters</li>
+                    <li><i class="fas fa-save"></i> Auto-save</li>
+                    <li><i class="fas fa-chart-simple"></i> Progress tracking</li>
+                </ul>
+            </div>
+
+            <div class="info-card animate-card" style="animation-delay: 0.3s">
+                <div class="card-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Quick Guide</h3>
+                <ul>
+                    <li><i class="fas fa-mouse-pointer"></i> Click "My Tasks" to start</li>
+                    <li><i class="fas fa-keyboard"></i> Press Enter to add task</li>
+                    <li><i class="fas fa-check-square"></i> Click checkbox to complete</li>
+                    <li><i class="fas fa-chart-line"></i> Watch your progress grow!</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Motivational Quote -->
+        <div class="quote-card animate-fade-in">
+            <i class="fas fa-quote-left"></i>
+            <p>Success is the sum of small efforts, repeated day in and day out.</p>
+            <i class="fas fa-quote-right"></i>
+        </div>
+    </main>
+
+    <footer class="animate-slide-up">
+        <p><i class="far fa-copyright"></i> DevTasks 2026 | University of Sindh, Jamshoro | <i class="fas fa-code"></i> Software Engineering Assignment</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
