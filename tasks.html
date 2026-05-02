@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTasks - Smart Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="animate-slide-down">
+        <h1><i class="fas fa-tasks"></i> DevTasks</h1>
+        <p>Manage your tasks here</p>
+    </header>
+
+    <nav class="animate-slide-down">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="tasks.html" class="active"><i class="fas fa-check-circle"></i> My Tasks</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+    </nav>
+
+    <main>
+        <div class="task-container animate-fade-in">
+            <div class="task-header">
+                <h2><i class="fas fa-clipboard-list"></i> My Task Manager</h2>
+                <div class="subtitle"><i class="fas fa-smile-wink"></i> Add, complete, and organize your tasks</div>
+            </div>
+
+            <div class="add-task">
+                <input type="text" id="taskInput" placeholder="Write a new task... (e.g., Fix login bug)">
+                <button id="addBtn" class="btn-glow">
+                    <i class="fas fa-plus"></i> Add Task
+                </button>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-list"></i> All
+                </button>
+                <button class="filter-btn" data-filter="active">
+                    <i class="fas fa-hourglass-half"></i> Active
+                </button>
+                <button class="filter-btn" data-filter="completed">
+                    <i class="fas fa-check-double"></i> Completed
+                </button>
+            </div>
+
+            <ul class="task-list" id="taskList"></ul>
+
+            <div class="stats" id="stats">
+                <i class="fas fa-chart-simple"></i> Loading...
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p><i class="far fa-copyright"></i> DevTasks 2026 | <i class="fas fa-code"></i> Software Engineering Assignment</p>
+    </footer>
+
+    <script src="tasks.js"></script>
+</body>
+</html>
